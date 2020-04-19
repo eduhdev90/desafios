@@ -22,7 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -48,7 +48,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -96,7 +95,6 @@
               "src/assets"
             ],
             "styles": [
-              
               "node_modules/primeflex/primeflex.scss",
               "src/styles.scss"
             ],
@@ -129,6 +127,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "desafioMegaleios"
+    }
+  },
+  "defaultProject": "desafioMegaleios",
+  "cli": {
+    "analytics": "b1b0cb32-fbed-49e7-a9ca-42a1913918e5"
+  }
 }

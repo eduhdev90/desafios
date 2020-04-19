@@ -1,0 +1,22 @@
+<app-menu-bar></app-menu-bar>
+
+<p-table *ngIf="!load" [value]="users">
+  <ng-template pTemplate="header">
+    <tr>
+      <th *ngFor="let col of cols">
+        {{col.header}}
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-car>
+    <tr *ngFor="let item of users">
+        <td>
+            <img [alt]="item.fullname" src="{{item.photo}}" width="32" style="vertical-align: middle" />
+        </td>
+        <td>{{item.fullName}}</td>
+        <td>{{item.cpf}}</td>
+        <td>{{item.phone}}</td>
+        <td>{{item.blocked}}</td>
+    </tr>
+</ng-template>
+</p-table>
